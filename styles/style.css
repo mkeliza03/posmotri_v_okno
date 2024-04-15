@@ -140,9 +140,7 @@ fieldset {
 }
 
 .result {
-  
-  
-  
+  width: 711px;
   margin-top: 80px;
 }
 
@@ -190,11 +188,11 @@ button:active {
 
 
 .content__list-item:not(:last-child) {
-  margin-bottom: 30px;
+  margin-bottom: 2px;
 }
 
 .content__details {
-  width: 100%;
+  width: 399px;
   height: 100%;
   gap: 26px;
 }
@@ -202,8 +200,9 @@ button:active {
 .content__list {
   position: relative;
   height: 298px;
-  margin-top: 2px;
+  margin-top: 25px;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .content__video-card {
@@ -295,4 +294,5 @@ ol {
   appearance: none;
   color: rgba(255, 255, 255, 1);
 }
+
 
