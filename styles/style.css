@@ -42,6 +42,7 @@ html {
   font-weight: bold;
   line-height: 70.5px;
   text-transform: uppercase;
+  margin-bottom: 23px;
 }
 
 .search-form__fieldset-title {
@@ -71,10 +72,6 @@ html {
   align-items: center;
   justify-content: center;
   gap: 5px;
-}
-
-.search-form__textfield {
-  appearance: none;
 }
 
 h1,
@@ -140,7 +137,7 @@ fieldset {
 }
 
 .result {
-  width: 711px;
+  max-width: 711px;
   margin-top: 80px;
 }
 
@@ -171,6 +168,7 @@ fieldset {
 
 button:focus {
   background-color: transparent;
+  outline: none;
 }
 
 button:focus-visible {
@@ -187,12 +185,16 @@ button:active {
 }
 
 
+.content__list-item {
+  max-width: 394px;
+}
+
 .content__list-item:not(:last-child) {
-  margin-bottom: 2px;
+  margin-bottom: 30px;
 }
 
 .content__details {
-  width: 399px;
+  max-width: 399px;
   height: 100%;
   gap: 26px;
 }
@@ -200,13 +202,14 @@ button:active {
 .content__list {
   position: relative;
   height: 298px;
-  margin-top: 25px;
+  margin-top: 2px;
   overflow-y: auto;
   overflow-x: hidden;
 }
 
 .content__video-card {
   display: flex;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -219,14 +222,11 @@ button:active {
   object-position: center;
 }
 
-.content__video-card-description-container {
-  width: 200px;
-}
-
 .content__card-link {
-  color: white;
+  display: block;
   text-decoration: none;
-  margin: 2px;
+  color: rgba(255, 255, 255, 1);
+  
 }
 
 .content__card-link:hover {
@@ -248,7 +248,7 @@ button:active {
 
 .content__video-card-title {
   font-family: "Oswald", sans-serif;
-  max-width: 200px;
+  max-width: 180px;;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -294,5 +294,10 @@ ol {
   appearance: none;
   color: rgba(255, 255, 255, 1);
 }
+
+.content__card-link_current {
+  background: #545050;
+}
+
 
 
